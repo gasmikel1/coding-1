@@ -2,41 +2,59 @@
 <html>
 
 <head>
-    <title></title>
+
     <style>
-     .example{ 
-        background-color: rgb(0, 47, 255);
-        height: 100px;
-        width: 100px;
-        margin: 5px;
-     }
-     .opposite{
-        background-color: rgb(223, 26, 26);
-        height: 100px;
-        width: 100px;
-        margin: 5px;
-     }      
-     .grid-container{
-      display:grid;
-      grid-template-columns: auto auto;
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-color: #fffafa;
+  padding: 10px;
+}
 
-     } 
-    </style>
+.grid-item {
+  background-color: rgba(40, 130, 214, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+.item6 {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+}
+</style>
 </head>
+<body>
 
-<body class="grid-container">
+<h1>A Five Items Grid Layout</h1>
 
-    <div class="example"> 1 </div>
+<div class="grid-container">
+  <div class="grid-item item1">nav</div>
+  <div class="grid-item item2">threats found</div>
+  <div class="grid-item item3">quick scan opption</div>  
+  <div class="grid-item item4">full scan opption</div>
+  <div class="grid-item item5">info</div>
+  <div class="grid-item item6">footer</div>
 
-    <div class="opposite"> 2 </div>
+</div>
 
-    <div class="example"> 3 </div>
+<p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
 
-    <div class="opposite"> 4 </div>
-
-    <div  class="example"> 5 </div>
-    <div class="opposite"> 6 </div>
+<p>Item 1, 2, and 5 are set to span multiple columns or rows.</p>
 
 </body>
-
 </html>
