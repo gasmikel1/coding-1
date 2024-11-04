@@ -25,3 +25,4 @@ bob= 70
 temmie= 90
 
 print(john)
+print(temmie)
