@@ -41,3 +41,4 @@ def evevater(floor):
      print('you under ground')
     elif floor==1:
        print('first floor')
+lights(4)
