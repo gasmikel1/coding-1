@@ -24,21 +24,21 @@ def Membership( memberShip, itemPrice):
     if memberShip == 'super':   
          print('super star')
          discountAmmount = itemPrice * 0.1 
-        total=itemPrice -discountAmmount
-        print(total) 
+         total=itemPrice -discountAmmount
+         print(total) 
     elif memberShip =='great':
         discountAmmount = itemPrice * 0.2 
         total=itemPrice -discountAmmount
         print(total) 
-    elif memberShip =='hyper'  
+    elif memberShip =='hyper' :      
        discountAmmount = itemPrice * 0.3 
        total=itemPrice -discountAmmount
        print(total) 
     else:
-        pirint('sorry')
+        print('sorry')
  
 
-Membership( memberShip, itemPrice)
+Membership(" memberShip, itemPrice")
 
 
 

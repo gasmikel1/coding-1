@@ -31,16 +31,16 @@ def password():
     userString=''
     userintger=0 
     while stringpassword!=userString:
-        print('enter a string password:')
-        userString = input("please typ string")
+        print('enter a string password')
+        userString = input("please typ string:")
         if stringpassword== userString:
                 while floatpassword!= userintger:
                     print("please type the second password")
-                    userintger=float(input("please put float here"))
+                    userintger=float(input("please put float here:"))
                     if floatpassword==userintger:
-                        print('your in')
+                        print('welcome to your accont')
                     else:
-                        print("sorry")
+                        print("no try again")
         else:
-            print("try again")                
+            print("no try again")                
 password()
