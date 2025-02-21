@@ -18,6 +18,6 @@ def playerhealth(hp):
     else:
         print('game over')
 
-playerhealth(4)
+playerhealth(100)
 
 
